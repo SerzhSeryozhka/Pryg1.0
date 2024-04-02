@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //test1();
-        Frog Frog;
+        test1();
     }
 
     public static void test1 ()
@@ -26,10 +25,10 @@ public class Main {
             }
         }
     }
-
-    //TODO:
-    //1 сделать функцию, которая спрашивает у пользователя координаты и длину языка и выдает в
+//1 сделать функцию, которая спрашивает у пользователя координаты и длину языка и выдает в
     //  качестве результата новую Лягушку
+    //TODO:
+
     //2 сделать функцию, которая спрашивает у пользователя длину маршрута, затем запраивает
     //  много точек в виде пар координат
     //  результат этой функции - массив Точек
@@ -67,16 +66,12 @@ class Frog{
         System.out.println("вызван конструктор Frog с 3 параметрами");
     }
 
-    public Frog() {
-
-    }
-
-    public void createFrog(){
+    public Frog createFrog(){
         Scanner scanner=new Scanner(System.in);
         System.out.println("Введите координаты лягушки и длинну языка: ");
         int x= scanner.nextInt();
         int y= scanner.nextInt();
-        Point Point;
-
+        int l=scanner.nextInt();
+        return new Frog(x,y,l);
     }
 }
