@@ -1,6 +1,9 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        test1();
+        //test1();
+        Frog Frog;
     }
 
     public static void test1 ()
@@ -62,5 +65,18 @@ class Frog{
         place = new Point(x, y);
         tongueLength = len;
         System.out.println("вызван конструктор Frog с 3 параметрами");
+    }
+
+    public Frog() {
+
+    }
+
+    public void createFrog(){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Введите координаты лягушки и длинну языка: ");
+        int x= scanner.nextInt();
+        int y= scanner.nextInt();
+        Point Point;
+
     }
 }
